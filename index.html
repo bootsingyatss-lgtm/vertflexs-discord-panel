@@ -3,36 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Discord Bot Dashboard</title>
+    <title>Discord Bot Manager</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <!-- Hero Section (Starting Page) -->
+
+        <!-- Hero Section -->
         <header class="hero">
-            <h1>Welcome to My Discord Bot</h1>
-            <p>Control your bot, manage servers, and automate tasks with ease. Log in to get started.</p>
+            <h1>Discord Bot Manager</h1>
+            <p>Control your bot, manage servers, and automate tasks with ease.</p>
             <button id="loginBtn" class="login-btn">Login with Discord</button>
         </header>
 
-        <!-- Slide-in Login Panel -->
-        <div id="loginPanel" class="login-panel hidden">
+        <!-- Slide-in Side Panel -->
+        <aside id="loginPanel" class="login-panel">
             <div class="panel-content">
-                <button id="closePanel" class="close-btn">&times;</button>
+                <button id="closePanel" class="close-btn">×</button>
                 <h2>Login to Continue</h2>
+
                 <form id="loginForm">
                     <div class="input-group">
-                        <label for="discordId">Discord User ID (for testing)</label>
+                        <label for="discordId">Discord User ID (test)</label>
                         <input type="text" id="discordId" placeholder="Enter your Discord ID" required>
                     </div>
                     <button type="submit" class="submit-btn">Authorize with Discord</button>
                 </form>
-                <p class="note">This will redirect to Discord OAuth. (Placeholder for now.)</p>
-            </div>
-        </div>
 
-        <!-- Overlay for Modal -->
-        <div id="overlay" class="overlay hidden"></div>
+                <p class="note">Will redirect to Discord OAuth (placeholder).</p>
+            </div>
+        </aside>
+
+        <!-- Dark overlay (click to close) -->
+        <div id="overlay" class="overlay"></div>
     </div>
 
     <script src="script.js"></script>
