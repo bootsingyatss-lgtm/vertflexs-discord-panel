@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const loginBtn   = document.getElementById('loginBtn');
-    const panel      = document.getElementById('loginPanel');
-    const overlay    = document.getElementById('overlay');
-    const closeBtn   = document.getElementById('closePanel');
-    const form       = document.getElementById('loginForm');
+    const loginBtn = document.getElementById('loginBtn');
+    const panel    = document.getElementById('loginPanel');
+    const overlay  = document.getElementById('overlay');
+    const closeBtn = document.getElementById('closePanel');
+    const form     = document.getElementById('loginForm');
 
     // OPEN
     loginBtn.addEventListener('click', () => {
@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const id = document.getElementById('discordId').value.trim();
         if (id) {
-            alert(`Simulating OAuth for user ID: ${id}`);
-            // Real flow: window.location = `https://discord.com/oauth2/authorize?...`;
+            alert(`OAuth simulation for ID: ${id}`);
+            // Real: window.location = `https://discord.com/oauth2/authorize?...`;
         }
     });
 });
