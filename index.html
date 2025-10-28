@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Discord Bot Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section (Starting Page) -->
+        <header class="hero">
+            <h1>Welcome to My Discord Bot</h1>
+            <p>Control your bot, manage servers, and automate tasks with ease. Log in to get started.</p>
+            <button id="loginBtn" class="login-btn">Login with Discord</button>
+        </header>
+
+        <!-- Slide-in Login Panel -->
+        <div id="loginPanel" class="login-panel hidden">
+            <div class="panel-content">
+                <button id="closePanel" class="close-btn">&times;</button>
+                <h2>Login to Continue</h2>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="discordId">Discord User ID (for testing)</label>
+                        <input type="text" id="discordId" placeholder="Enter your Discord ID" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Authorize with Discord</button>
+                </form>
+                <p class="note">This will redirect to Discord OAuth. (Placeholder for now.)</p>
+            </div>
+        </div>
+
+        <!-- Overlay for Modal -->
+        <div id="overlay" class="overlay hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
